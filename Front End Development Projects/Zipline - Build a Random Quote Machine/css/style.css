@@ -7554,7 +7554,7 @@ html, body {
   text-align: center; }
 
 .quote_container {
-  position: absolute;
+  position: fixed;
   max-width: 700px;
   width: 100%;
   top: 50%;
@@ -7575,3 +7575,20 @@ html, body {
 .quote_author {
   font-size: 1em;
   color: #f4f4f4; }
+
+nav {
+  z-index: 9999; }
+
+@media all and (max-width: 700px) {
+  .quote_container {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: inherit;
+    margin-left: inherit;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    box-sizing: border-box; } }

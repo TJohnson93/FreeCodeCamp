@@ -22,7 +22,7 @@ html, body {
 }
 
 .quote_container {
-	position: absolute;
+	position: fixed;
 	max-width: 700px;
 	width: 100%;
 	top: 50%;
@@ -45,6 +45,26 @@ html, body {
 .quote_author{
 	font-size: 1em;
 	color: $font-color-secondary;
+}
+
+nav{
+	z-index: 9999;
+}
+
+@media all and (max-width: 700px){
+	.quote_container {
+		position: relative;
+		width: 100%;
+		top: 0;
+		left: 0;
+		margin-top: inherit;
+		margin-left: inherit;
+		background-color: rgba(0, 0, 0, 0.2);
+		padding: 10px;
+
+		@include border-radius-simple(10px);
+		@include box-sizing(border-box);
+	}
 }
 
 // .btn_container{
