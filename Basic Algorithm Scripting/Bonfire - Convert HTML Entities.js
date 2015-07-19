@@ -1,7 +1,18 @@
 /**
+ * Original Filename: Bonfire - Convert HTML Entities.js
+ * Original Creation Date: 13-07-2015
+ * Original Author: Todd Johnson
+ *
+ * Convert the characters "&", "<", ">", '"' (double quote), 
+ * and "'" (apostrophe), in a string to their corresponding 
+ * HTML entities.
+ */
+
+/**
  * Convert specific special characters to their HTML entities
  * @param  {String} str A string containing special chars
- * @return {String}     String with special chars replaced with HTML entities
+ * @return {String}     String with special chars replaced with 
+ *                      HTML entities
  */
 function convert(str) {
 	str = str.replace(/[&]/g,'&amp;');
