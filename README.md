@@ -1,2 +1,3 @@
 # FreeCodeCamp
-Free Code Camp exercise solutions
+This repository contains my solutions for the exercises found at FreeCodeCamp.
+
