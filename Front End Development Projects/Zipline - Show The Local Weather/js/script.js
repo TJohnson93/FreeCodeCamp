@@ -102,6 +102,12 @@ $(document).ready(function () {
 			case 'Partly Cloudy':
 				$('span#weather_desc_icon').html('<img src="img/ico/partly_cloudy.png"/>');
 				break;
+			case 'Shower In Vicinity':
+				$('span#weather_desc_icon').html('<img src="img/ico/showers.png"/>');
+				break;
+			case 'Sunny':
+				$('span#weather_desc_icon').html('<img src="img/ico/showers.png"/>');
+				break;
 			default:
 				$('span#weather_desc_icon').html('<img src="img/ico/partly_cloudy.png"/>');
 				break;
